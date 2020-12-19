@@ -383,3 +383,46 @@ button:hover {
     padding: 35px 20px;
   }
 }
+
+/*-----------------------------------------------------------------
+Estilos app
+------------------------------------------------------------------*/
+
+.header-logo{
+  margin: auto;
+  text-align: center;
+}
+
+.header .header-logo img{
+  width: 14em;
+
+}
+
+.header-bievenida{
+  text-align: center;
+  margin-top: -15px;
+}
+
+.article p{
+  text-align: justify;
+  padding: 20px 50px 50px 50px;
+}
+
+.article .article-button{
+  border: none;
+  margin: auto;
+  background: #49c949;
+  text-align: center;
+  display: block;
+  padding: 1em;
+  width: 75%;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.article .article-espacio{
+  padding: 1em;
+}
