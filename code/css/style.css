@@ -2,6 +2,9 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
  */
+*{
+  font-family: 'Quicksand', sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -410,8 +413,9 @@ Estilos app
 
 .article .article-button{
   border: none;
+  border-radius: 1000px;
   margin: auto;
-  background: #49c949;
+  background: #549154;
   text-align: center;
   display: block;
   padding: 1em;
@@ -421,6 +425,18 @@ Estilos app
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.article .article-button:hover{
+  background: rgb(100, 163, 113);
+  /*border: solid #549154;*/
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 .article .article-espacio{
