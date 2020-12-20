@@ -420,7 +420,8 @@ Estilos app
   text-align: center;
   display: block;
   padding: 1em;
-  width: 75%;
+  width: 26em;
+  /*width: 75%;*/
   font-weight: 600;
   line-height: 24px;
   font-size: 15px;
@@ -442,6 +443,11 @@ Estilos app
 
 .article .article-espacio{
   padding: 1em;
+}
+
+.article .article-container {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -543,7 +549,9 @@ Flex informes
   
 }
 
+@media only screen and (mix-widht:500px){
 
+}
 
 
 
