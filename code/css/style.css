@@ -408,6 +408,8 @@ Estilos app
 
 .article p{
   text-align: justify;
+  margin: auto;
+  text-align: center;
   padding: 20px 50px 50px 50px;
 }
 
@@ -442,3 +444,107 @@ Estilos app
 .article .article-espacio{
   padding: 1em;
 }
+
+
+/*-----------------------------------------------------------------
+Flex informes
+------------------------------------------------------------------*/
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item{
+  color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 120px;
+  min-width: 120px;
+  text-align: center;
+}
+
+
+.flex-container .flex-name{
+  margin-right: 46px;
+  margin-left: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.flex-container .flex-name p{
+  padding-left: 12px;
+  color: #000000;
+  text-align: center;
+}
+
+.flex-container .flex-item .img-button1{
+  width: auto;
+  height: 100%;
+  
+}
+.flex-container .flex-item .img-button2{
+  width: auto;
+  height: 100%;
+  
+}
+.flex-container .flex-item .img-button3{
+  width: auto;
+  height: 100%;
+  
+}
+
+.flex-container .flex-item .img-button1:hover{
+ 
+  content: "";
+  background: rgba(43, 32, 34, 0.42);
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 300px 300px 300px 300px;
+}
+
+.flex-container .flex-item .img-button2:hover{
+ 
+  content: "";
+  background: rgba(43, 32, 34, 0.42);
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 300px 300px 300px 300px;
+}
+
+.flex-container .flex-item .img-button3:hover{
+ 
+  content: "";
+  background: rgba(43, 32, 34, 0.42);
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 300px 300px 300px 300px;
+}
+
+.backButton{
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+  padding-left: 40px
+  
+}
+.backButton .img-backButton img{
+  width: 50px;
+  height: 50px;
+  
+}
+
+
+
+
+
