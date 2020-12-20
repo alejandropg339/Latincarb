@@ -444,7 +444,7 @@ Estilos app
   background: #549154;
   text-align: center;
   display: block;
-  padding: 1em;
+  padding: 10px;
   /*width: 26em;*/
   width: 75%;
   font-weight: 600;
@@ -576,6 +576,22 @@ Flex informes
   
 }
 
+/*
+Informe cargador 1
+*/
+
+.fechas{
+  margin-bottom: 25px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 8%;
+  margin-top: 4%;
+}
 
 /*--------------------------------------------
 PRUEBA
