@@ -396,6 +396,17 @@ Estilos app
   text-align: center;
 }
 
+.header-logo-servicio {
+  margin: auto;
+  margin-top: -1em;
+  text-align: center;
+  position: relative;
+}
+
+.header-logo-servicio img {
+  width: 9em;
+}
+
 .header .header-logo img {
   width: 14em;
 }
@@ -403,6 +414,20 @@ Estilos app
 .header-bievenida {
   text-align: center;
   margin-top: -15px;
+}
+
+.header-bievenida-servicio {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.article .article-service{
+  text-align: justify;
+  margin-top: -10px;
+  padding-top: 1.5em;
+  padding-bottom: 18px;
+  
 }
 
 .article p {
@@ -552,6 +577,48 @@ Flex informes
 }
 
 
+/*--------------------------------------------
+PRUEBA
+----------------------------------------------*/
+/* Centra el input personalizado con el texto */
+.custom-radio-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: arial;
+}
 
+/* Modificador para dar la imagen de radio */
+.custom-radio-checkbox__show--radio {
+  background-image: url(/code/images/radio-uncheck.png);
+}
 
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+  display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: .5rem;
+  background-size: cover;
+}
+
+/* Cambia el radio personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
+  background-image: url(/code/images/radio-check.png);
+}
+
+.article .container-selectors{
+  margin: auto;
+  width: 75%;
+}
+.article .selectores{
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+}
 
