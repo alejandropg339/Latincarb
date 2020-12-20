@@ -420,8 +420,8 @@ Estilos app
   text-align: center;
   display: block;
   padding: 1em;
-  width: 26em;
-  /*width: 75%;*/
+  /*width: 26em;*/
+  width: 75%;
   font-weight: 600;
   line-height: 24px;
   font-size: 15px;
@@ -462,42 +462,44 @@ Flex informes
 
 .flex-item{
   color: #fff;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
   height: 120px;
+  width: 75%;
   min-width: 120px;
   text-align: center;
+  margin-bottom: -20px;
+  padding-right: auto;
 }
 
 
 .flex-container .flex-name{
-  margin-right: 46px;
-  margin-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: bold;
-  padding-left: 10px;
-  padding-top: 7px;
+  padding-left: auto;
   text-align: center;
 }
 
 .flex-container .flex-name p{
-  padding-left: 12px;
+  padding-right: 10px;
   color: #000000;
   text-align: center;
 }
 
 .flex-container .flex-item .img-button1{
   width: auto;
-  height: 100%;
+  height: 75%;
   
 }
 .flex-container .flex-item .img-button2{
   width: auto;
-  height: 100%;
+  height: 75%;
   
 }
 .flex-container .flex-item .img-button3{
   width: auto;
-  height: 100%;
+  height: 75%;
   
 }
 
@@ -506,10 +508,10 @@ Flex informes
   content: "";
   background: rgba(43, 32, 34, 0.42);
   top: 0;
-  min-height: 100%;
+  min-height: 60%;
   left: 0;
   right: 0;
-  border-radius: 300px 300px 300px 300px;
+  border-radius: 100px 100px 100px 100px;
 }
 
 .flex-container .flex-item .img-button2:hover{
@@ -517,7 +519,7 @@ Flex informes
   content: "";
   background: rgba(43, 32, 34, 0.42);
   top: 0;
-  min-height: 100%;
+  min-height: 60%;
   left: 0;
   right: 0;
   border-radius: 300px 300px 300px 300px;
@@ -528,7 +530,7 @@ Flex informes
   content: "";
   background: rgba(43, 32, 34, 0.42);
   top: 0;
-  min-height: 100%;
+  min-height: 60%;
   left: 0;
   right: 0;
   border-radius: 300px 300px 300px 300px;
@@ -549,9 +551,7 @@ Flex informes
   
 }
 
-@media only screen and (mix-widht:500px){
 
-}
 
 
 
