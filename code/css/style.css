@@ -398,7 +398,7 @@ Estilos app
 
 .header-logo-servicio {
   margin: auto;
-  margin-top: -1em;
+  margin-top: 0.3em;
   text-align: center;
   position: relative;
 }
@@ -733,3 +733,30 @@ tr:hover td{
   background-color: #549154;
   color: white;
 }
+.article .article-input{
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.big-title{
+  font-size: 1.8em;
+}
+
+.button-container{
+  display: block;
+}
+
+.article .article-service-ms{
+  text-align: justify;
+  margin-top: -10px;
+  padding-top: 1.5em;
+  padding-bottom: 7px;
+}
+
+.article .container-selectors-ns{
+  margin: auto;
+  width: 75%;
+  margin-bottom: -30px;
+}
+
