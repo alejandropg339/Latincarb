@@ -51,7 +51,13 @@ Author URL: http://w3layouts.com
 						</div>
 						<div class="bottom-content">
 							<form action="#" method="post">
-								<input type="email" name="email" class="input-form" placeholder="Usuario"
+								<?php
+								if(isset($errorLogin)){
+									echo "<p style='color: red';>".$errorLogin."</p>";
+								}
+								
+								?>
+								<input type="text" name="username" class="input-form" placeholder="Usuario"
 									required="required" />
 								<input type="password" name="password" class="input-form" placeholder="Contraseña"
 									required="required" />
