@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb42ca2408.js" crossorigin="anonymous"></script>
     <title>Bienvenido Operario</title>
 </head>
 
 <body>
     <div class="header">
+        <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Bienvenido Operario</h1>
+            <h1>Bienvenido <?php echo $user->getNombre();?></h1>
         </div>
     </div>
 
