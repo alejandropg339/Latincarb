@@ -706,10 +706,19 @@ PRUEBA
 LOGOUT
 ---------------------------------------------------------------------------------*/
 
-.header a{
-  color: green;
+.logoutt{
+  display: inline-block;
+  margin-left: 40px;
 }
 
+
+#logoutf{
+  color: green; 
+  padding-top:40px; 
+  padding:20px; 
+  display:inline-block; 
+  margin: auto;
+}
 
 
 

@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['rol'])){
+    header('location: index-d.php');
+}else{
+    if($_SESSION['rol'] != 2){
+        header('location: index-d.php');
+    }elseif($_SESSION['rol'] != 2){
+        header('location: index-d.php');
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,11 +27,12 @@
 
 <body>
     <div class="header">
+    <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Bienvenido Administrador</h1>
+            <h1>Bienvenido</h1>
         </div>
     </div>
 
