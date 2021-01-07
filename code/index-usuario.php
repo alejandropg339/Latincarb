@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['rol'])){
+    header('location: index-d.php');
+}else{
+    if($_SESSION['rol'] != 4){
+        header('location: index-d.php');
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
