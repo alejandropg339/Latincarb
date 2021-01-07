@@ -422,6 +422,10 @@ Estilos app
   font-size: 14px;
 }
 
+.header h3{
+  text-align: center;
+  margin-top: 15px;
+}
 .article .article-service{
   text-align: justify;
   margin-top: -10px;
@@ -483,6 +487,15 @@ Flex informes
 .flex-container{
   display: flex;
   justify-content: center;
+}
+
+.flex-container-informe{
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: auto;
+  width: 85%;
+  padding: auto;
 }
 
 .flex-item{
@@ -604,6 +617,16 @@ Informe cargador 1
   margin-top: 4%;
 }
 
+.text2{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
 /*--------------------------------------------
 PRUEBA
 ----------------------------------------------*/
@@ -675,6 +698,51 @@ PRUEBA
   border-radius: 10px;
 }
 
+/*
+Informe Cargador 1
+*/
+
+.celdaSup{
+  background: #58a758;
+}
+
+.tableStyle{
+  margin-top: 25px;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 98%;
+}
+
+.table2{
+  margin-top: 25px;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  margin-left: 15.8%;
+  
+}
+
+th, td{
+  border: solid 1px black;
+  padding: 5px;
+  overflow-x: auto;
+  
+}
+thead{
+  background-color: #549154 ;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+tr:nth-child(even){
+  background-color: #ddd ;
+
+}
+
+tr:hover td{
+  background-color: #549154;
+  color: white;
+}
 .article .article-input{
   padding: 10px;
   margin-bottom: 30px;
@@ -702,6 +770,21 @@ PRUEBA
   margin-bottom: -30px;
 }
 
+/*
+Informe usuarios
+*/
+
+.form{
+  margin-bottom: -4%;
+}
+
+/*
+Estado de los Cargadores
+*/
+
+.estadoCarga{
+  margin-top: 18%;
+}
 /*-------------------------------------------------------------------------------
 LOGOUT
 ---------------------------------------------------------------------------------*/

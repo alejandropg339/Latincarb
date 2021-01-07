@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Mantenimiento</title>
 </head>
+
 <body>
     <div class="header">
         <div class="backButton">
@@ -23,35 +25,35 @@
     <div class="article">
         <p class="article-service">Seleccione el tipo de mantenimiento que desea realizar</p>
         <div class="container-selectors">
-        <select class="selectores" name="opUsuario">Seleccionar tipo de mantenimiento
-            <option value="" selected disabled hidden>Seleccionar tipo de mantenimiento</option>
-            <option value="1">COMBUSTIBLE</option>
-            <option value="2">ACEITES Y FILTROS</option>
-            <option value="3">ENGRASE GENERAL</option>
-            <option value="4">CAMBIO DE LLANTAS</option>
-            <option value="5">MANTENIMIENTO ELÉCTRICO</option>
-            <option value="6">MANTENIMIENTO MECANICO</option>
-            <option value="7">LAVADO GENERAL</option>
-        </select>
-    </div>
-        
+            <select class="selectores" name="opUsuario">Seleccionar tipo de mantenimiento
+                <option value="" selected disabled hidden>Seleccionar tipo de mantenimiento</option>
+                <option value="1">COMBUSTIBLE</option>
+                <option value="2">ACEITES Y FILTROS</option>
+                <option value="3">ENGRASE GENERAL</option>
+                <option value="4">CAMBIO DE LLANTAS</option>
+                <option value="5">MANTENIMIENTO ELÉCTRICO</option>
+                <option value="6">MANTENIMIENTO MECANICO</option>
+                <option value="7">LAVADO GENERAL</option>
+            </select>
+        </div>
+
         <p class="article-service">Seleccione el cargador al que se realizara mantenimiento</p>
-        
+
         <div class="flex-container">
             <div class="flex-item">
-                <img class="img-button1-1" type="image" src="images/camion_verde.jpg" name="cargadorUno" value="" >
+                <img class="img-button1-1" type="image" src="images/camion_verde.jpg" name="cargadorUno" value="">
             </div>
             <div class="flex-item">
                 <img class="img-button2-1" type="image" src="images/camion_verde.jpg" name="cargadorDos" value="">
             </div>
         </div>
-    
+
         <div class="flex-container">
             <div class="flex-name">
                 <label class="custom-radio-checkbox">
                     <!-- Input oculto -->
                     <input class="custom-radio-checkbox__input" type="radio" name="genero" value="cargadorUno">
-                    <!-- Imagen en sustitucion --> 
+                    <!-- Imagen en sustitucion -->
                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
                     <!-- Texto -->
                     <span class="custom-radio-checkbox__text">Cargador 1</span>
@@ -61,17 +63,18 @@
                 <label class="custom-radio-checkbox">
                     <!-- Input oculto -->
                     <input class="custom-radio-checkbox__input" type="radio" name="genero" value="cargadorDos">
-                    <!-- Imagen en sustitucion --> 
+                    <!-- Imagen en sustitucion -->
                     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
                     <!-- Texto -->
                     <span class="custom-radio-checkbox__text">Cargador 2</span>
                 </label>
             </div>
-            
+
         </div>
         <br><br>
         <input class="article-button" type="submit" name="iniciarServicio" value="Iniciar Mantenimiento">
     </div>
-    
+
 </body>
+
 </html>
