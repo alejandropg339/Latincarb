@@ -617,6 +617,16 @@ Informe cargador 1
   margin-top: 4%;
 }
 
+.text2{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
 /*--------------------------------------------
 PRUEBA
 ----------------------------------------------*/
@@ -696,7 +706,7 @@ Informe Cargador 1
   background: #58a758;
 }
 
-.table{
+.tableStyle{
   margin-top: 25px;
   background-color: white;
   text-align: left;
@@ -760,6 +770,21 @@ tr:hover td{
   margin-bottom: -30px;
 }
 
+/*
+Informe usuarios
+*/
+
+.form{
+  margin-bottom: -4%;
+}
+
+/*
+Estado de los Cargadores
+*/
+
+.estadoCarga{
+  margin-top: 18%;
+}
 /*-------------------------------------------------------------------------------
 LOGOUT
 ---------------------------------------------------------------------------------*/

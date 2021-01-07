@@ -12,6 +12,7 @@
 
 <body>
     <div class="header">
+    <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>

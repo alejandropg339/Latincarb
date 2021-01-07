@@ -13,7 +13,8 @@
 
 <body>
     <div class="header">
-        <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
+        <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;"
+            href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
@@ -23,13 +24,11 @@
     </div>
 
     <div class="article">
-        <p>En esta app usted deberá registrar cada uno de los servicios que preste, al igual que los mantenimientos que
-            usted le realice a las maquinarías. </p>
-            <div class="article-container">
-        <a href="nuevo-servicio.html"> <input class="article-button" type="submit" name="iniciarServicio" value="Iniciar Servicio"></a>
-        <div class="article-espacio"></div>
-        <input class="article-button" type="submit" name="Mantenimiento" value="Realizar Mantenimiento">
-    </div>
+        <p>Esta aplicación le permitirá ver los informes de los servicios que la empresa
+            Latincarb le ha prestado en un rngo de fechas que usted selccionará. </p>
+        <div class="article-container">
+            <input class="article-button" type="submit" name="usuarioInforme" value="Realizar Informe">
+        </div>
     </div>
 </body>
 
