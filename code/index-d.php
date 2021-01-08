@@ -29,6 +29,7 @@
 			<!--/Style-CSS -->
 			<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 			<!--//Style-CSS -->
 		</head>
@@ -60,7 +61,8 @@
 								?>
 								<input type="text" name="username" class="input-form" placeholder="Usuario" required="required" />
 								<input type="password" name="password" class="input-form" placeholder="Contraseña" required="required" />
-								<button type="submit" class="loginhny-btn btn">Iniciar Sesión</button>
+								
+								<button type="submit" class="loginhny-btn btn" data-toggle="modal" data-target="#contenidoModal">Iniciar Sesión</button>
 									</form>
 
 								</div>
@@ -74,6 +76,8 @@
 				</div>
 			</section>
 			<!-- //login-section -->
+			<script src="js/jquery.js"></script>
+			<script src="js/bootstrap.bundle.min.js"></script>
 		</body>
 
 		</html>

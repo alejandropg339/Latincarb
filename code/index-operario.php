@@ -1,13 +1,15 @@
 <?php
 
 session_start();
-if(!isset($_SESSION['rol'])){
+if (!isset($_SESSION['rol'])) {
     header('location: index-d.php');
-}else{
-    if($_SESSION['rol'] != 3){
+} else {
+    if ($_SESSION['rol'] != 3) {
         header('location: index-d.php');
     }
 }
+
+include_once('includes/actividades-back.php');
 
 ?>
 
@@ -38,11 +40,19 @@ if(!isset($_SESSION['rol'])){
     <div class="article">
         <p>En esta app usted deberá registrar cada uno de los servicios que preste, al igual que los mantenimientos que
             usted le realice a las maquinarías. </p>
-            <div class="article-container">
-        <a href="nuevo-servicio.html"> <input class="article-button" type="submit" name="iniciarServicio" value="Iniciar Servicio"></a>
-        <div class="article-espacio"></div>
-        <input class="article-button" type="submit" name="Mantenimiento" value="Realizar Mantenimiento">
-    </div>
+        <div class="article-container">
+            <?php
+            for ($i = 1; $i <= $numero; $i++) {
+                $mostrar = mysqli_fetch_array($resultado)
+            ?>
+                <tr>
+                    <td align="center"><?php echo '<ul style="list-style-type:none; margin-left: -40px;" ><li style="list-style:none;">' . '<a class="article-button" href="' . $mostrar['enlace'] . '" target="_self">' . $mostrar['actividad'] . '</a>' . '</li></ul>'; ?></td>
+                </tr>
+
+            <?php
+            }
+            mysqli_close($conexion); ?>
+        </div>
     </div>
 </body>
 

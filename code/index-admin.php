@@ -11,6 +11,8 @@ if(!isset($_SESSION['rol'])){
     }
 }
 
+include_once('includes/actividades-back.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -38,13 +40,24 @@ if(!isset($_SESSION['rol'])){
 
     <div class="article">
         <p>Seleccione una actividad a realizar </p>
-        <input class="article-button" type="submit" name="iniciarServicio" value="Iniciar Servicio">
+        <?php
+            for ($i = 1; $i <= $numero; $i++) {
+                $mostrar = mysqli_fetch_array($resultado)
+            ?>
+                <tr>
+                    <td align="center"><?php echo '<ul style="list-style-type:none; margin-left: -40px;" ><li style="list-style:none;">' . '<a class="article-button" href="' . $mostrar['enlace'] . '" target="_self">' . $mostrar['actividad'] . '</a>' . '</li></ul>'; ?></td>
+                </tr>
+
+            <?php
+            }
+            mysqli_close($conexion); ?>
+        <!--<input class="article-button" type="submit" name="iniciarServicio" value="Iniciar Servicio">
         <div class="article-espacio"></div>
         <input class="article-button" type="submit" name="mantenimiento" value="Realizar Mantenimiento">
         <div class="article-espacio"></div>
         <input class="article-button" type="submit" name="informes" value="Generar Informes">
         <div class="article-espacio"></div>
-        <input class="article-button" type="submit" name="estadoCargadores" value="Estado de los Cargadores">
+        <input class="article-button" type="submit" name="estadoCargadores" value="Estado de los Cargadores">-->
     </div>
 </body>
 

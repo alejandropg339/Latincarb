@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index-d.php');
+} else {
+    if ($_SESSION['rol'] != 2) {
+        header('location: index-d.php');
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,7 +24,7 @@
 <body>
     <div class="header">
         <div class="backButton">
-            <a class="img-backButton" href="index-admin.html"><img src="images/back_button.png" alt=""></a>
+            <a class="img-backButton" href="index-admin.php"><img src="images/back_button.png" alt=""></a>
         </div>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
