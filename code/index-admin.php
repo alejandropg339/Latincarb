@@ -6,8 +6,6 @@ if(!isset($_SESSION['rol'])){
 }else{
     if($_SESSION['rol'] != 2){
         header('location: index-d.php');
-    }elseif($_SESSION['rol'] != 2){
-        header('location: index-d.php');
     }
 }
 
