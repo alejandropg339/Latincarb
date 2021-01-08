@@ -1,5 +1,5 @@
 <?php
-    require("includes/register.php");
+require("includes/register.php");
 ?>
 
 <!DOCTYPE html>
@@ -52,12 +52,12 @@
 
         <p class="article-service-ms">Confirmar la contraseña del usuario</p>
         <div class="container-selectors-ns">
-            <input class="article-input" type="text" name="passwordRegistro2" placeholder="Contraseña del usuario*" required> 
+            <input class="article-input" type="text" name="passwordRegistro2" placeholder="Contraseña del usuario*" required>
         </div>
 
         <p class="article-service-ms">Digite el numero del usuario</p>
         <div class="container-selectors-ns">
-            <input class="article-input" type="number" name="numeroRegistro" placeholder="Numero del usuario*" required> 
+            <input class="article-input" type="number" name="numeroRegistro" placeholder="Numero del usuario*" required>
         </div>
 
         <p class="article-service">Seleccione el tipo de mantenimiento que desea realizar</p>
