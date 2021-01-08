@@ -61,6 +61,33 @@ if (isset($_POST['username']) && ($_POST['password'])) {
 		echo'<script type="text/javascript">
     alert("Usuario y/o contraseña incorrectas");
     window.location.href="index-d.php";
-    </script>';
+	</script>
+	';
+
+	echo '<div class="modal fade" id="contenidoModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<p class="h1">Error al iniciar</p>
+			<button type="button" class="close" data-dismiss="modal">
+			<span>&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			<p>Usuario y/o contraseña incorrecta</p>
+			</div>
+		</div>
+	</div>
+</div>';
+
+	echo '<link rel="stylesheet" href="css/bootstrap.min.css">
+	<div class="alert alert-succses" role="alert">
+		Usuario y/o contraseña incorrecta
+		</div>';
+
+?>
+
+<?php
 	}
 }
+?>
