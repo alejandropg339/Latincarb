@@ -2,10 +2,12 @@
 
 session_start();
 if(!isset($_SESSION['rol'])){
-    header('location: index-d.php');
+    header('location: index.php');
 }else{
     if($_SESSION['rol'] != 2){
-        header('location: index-d.php');
+        header('location: index.php');
+    }elseif($_SESSION['rol'] != 2){
+        header('location: index.php');
     }
 }
 
