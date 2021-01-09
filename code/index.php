@@ -69,7 +69,7 @@
 							</div>
 						</div>
 						<div class="w3l-copy-right text-center">
-							<p>Copyright © 2020 | Latincarb
+							<p>Copyright © 2020 | Latincarb 
 							</p>
 						</div>
 					</div>
