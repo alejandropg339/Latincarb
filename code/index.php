@@ -62,7 +62,7 @@
 								<input type="text" name="username" class="input-form" placeholder="Usuario" required="required" />
 								<input type="password" name="password" class="input-form" placeholder="Contraseña" required="required" />
 								
-								<button type="submit" class="loginhny-btn btn" data-toggle="modal" data-target="#contenidoModal">Iniciar Sesión</button>
+								<button type="submit" class="loginhny-btn btn" data-toggle="modal" data-target="#contenidoModal" name="login">Iniciar Sesión</button>
 									</form>
 
 								</div>

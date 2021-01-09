@@ -12,6 +12,8 @@ if(!isset($_SESSION['rol'])){
 }
 
 include_once('includes/actividades-back.php');
+//include_once('includes/prueba.php');
+
 
 ?>
 

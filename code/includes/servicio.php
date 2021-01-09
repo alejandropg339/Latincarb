@@ -14,6 +14,8 @@ if (isset($_POST['inicia'])) {
         $resultadoInsert = mysqli_query($conexion, $insertServicio);
 
         if($resultadoInsert){
+                    $updateEstado = "UPDATE `cargador` SET `estado` = '0' WHERE `cargador`.`id` = '$cargador'";
+                    $updateResultado = mysqli_query($conexion, $updateEstado);
             switch ($servicio) {
                 case 1:
                     header('location: servicio-dt.php');
