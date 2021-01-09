@@ -12,6 +12,7 @@ if(!isset($_SESSION['rol'])){
 }
 
 include_once('includes/actividades-back.php');
+include_once('includes/global.php');
 
 ?>
 
@@ -34,7 +35,7 @@ include_once('includes/actividades-back.php');
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Bienvenido</h1>
+            <h1>Bienvenido<?php echo "".$cedulaG?></h1>
         </div>
     </div>
 

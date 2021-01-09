@@ -26,14 +26,15 @@ if (isset($_SESSION['rol'])) {
 if (isset($_POST['username']) && ($_POST['password'])) {
 	$username = $_POST['username'];
 	$password = md5($_POST['password']);
-
+	$_SESSION['userG']=$username;
+	
 	$db = new db();
 
 	$query = $db->connect()->prepare('SELECT * FROM usuario  where username = :username AND contrasena = :password');
 	$query->execute(['username' => $username, 'password' => $password]);
 
 	$row = $query->fetch(PDO::FETCH_NUM);
-
+	
 	if ($row == true) {
 		$rol = $row[7];
 		$_SESSION['rol'] = $rol;
