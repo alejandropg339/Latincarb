@@ -24,7 +24,7 @@ if (isset($_SESSION['rol'])) {
 }
 
 if (isset($_POST['username']) && ($_POST['password'])) {
-	$username = $_POST['username'];
+	$GLOBALS['username'] = $_POST['username'];
 	$password = md5($_POST['password']);
 	$_SESSION['userG']=$username;
 	
