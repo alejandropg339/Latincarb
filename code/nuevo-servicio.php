@@ -12,6 +12,8 @@ if (!isset($_SESSION['rol'])) {
 include_once('includes/estado.php');
 include_once('includes/usuarios.php');
 include_once('includes/servicio.php');
+include_once('includes/global.php');
+//include_once('includes/finalizarServicio.php');
 ?>
 
 <!DOCTYPE html>

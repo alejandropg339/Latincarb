@@ -2,13 +2,14 @@
 
 include_once('con_db.php');
 
-
 if (isset($_POST['inicia'])) {
 
     if (strlen($_POST['opUsuario'])>=1 && strlen($_POST['opServicio'])>=1 && isset($_POST['cargador'])>=1) {
         $GLOBALS['cedulaUsuario'] = $_POST['opUsuario'];
         $servicio = $_POST['opServicio'];
-        $cargador = $_POST['cargador'];
+        $GLOBALS['cargador'] = $_POST['cargador'];
+        $_SESSION['userService'] = $cedulaUsuario;
+        $_SESSION['cargadorEstado'] = $cargador;
         //$_SESSION['userService']=$cedulaUsuario;
 
         $insertServicio = "INSERT INTO `servicio`(`fecha_inicial`, `usuario_cedula`, `tipo_servicio_id`, `cargador_id`) VALUES (NOW(),'$cedulaUsuario','$servicio','$cargador')";
