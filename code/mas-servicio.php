@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index.php');
+} else {
+    if ($_SESSION['rol'] != 3) {
+        header('location: index.php');
+    }
+}
+include_once('includes/finalizarServicioMas.php');
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,16 +30,16 @@
         </div>
     </div>
     <div class="article">
-        <p class="article-service-ms">Servicio iniciado a las 3:50:02 pm</p>
+        <p class="article-service-ms">Servicio iniciado a las: <br> <?php echo " ".$resultadoFinalBusqueda2 ?></p>
         <p class="article-service-ms">Digite la cantidad de dobletroques cargados</p>
         <div class="container-selectors-ns">
             <form method="POST">
                 <!--<div class="container-selectors">-->
-                <input class="article-input" type="number" name="cantDobletroque" placeholder="Cantidad de tractomulas">
+                <input class="article-input" type="number" name="cantDobletroque" placeholder="Cantidad de dobletroque">
             </div>
                 <p class="article-service-ms">Digite la cantidad tractomulas cargadas</p>
                 <div class="container-selectors-ns">
-                    <input class="article-input" type="number" name="cantDobletroque" placeholder="Cantidad de tractomulas">
+                    <input class="article-input" type="number" name="cantTractomula" placeholder="Cantidad de tractomulas">
                     </div>
                     <p class="article-service-ms">Seleccione si realizo al menos uno de estos dos servicios</p>
                     <br>
@@ -54,7 +66,7 @@
                         </div>
                         </div>
                         <br>
-                        <input class="article-button" type="submit" value="Finalizar Servicio">
+                        <input class="article-button" type="submit" name="finServiceMas" value="Finalizar Servicio">
             </form>
     </div>
         
