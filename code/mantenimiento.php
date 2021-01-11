@@ -8,14 +8,9 @@ if (!isset($_SESSION['rol'])) {
         header('location: index.php');
     }
 }
-
 include_once('includes/estado.php');
-include_once('includes/usuarios.php');
-include_once('includes/servicio.php');
-include_once('includes/global.php');
-//include_once('includes/finalizarServicio.php');
+include_once('includes/iniciar-mantenimiento.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,46 +21,38 @@ include_once('includes/global.php');
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>Nuevo Servicio</title>
+    <title>Mantenimiento</title>
 </head>
 
 <body>
     <div class="header">
         <div class="backButton">
-            <a class="img-backButton" href="index-operario.php"><img src="images/back_button.png" alt=""></a>
+            <a class="img-backButton" href="index-operario.html"><img src="images/back_button.png" alt=""></a>
         </div>
         <div class="header-logo-servicio">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida-servicio">
-            <h1>Nuevo Servicio</h1>
+            <h1>Mantenimiento</h1>
         </div>
     </div>
     <div class="article">
-    <form method="POST">
-            <p class="article-service">Seleccione el usuario al que se le prestará el servicio</p>
+        <p class="article-service">Seleccione el tipo de mantenimiento que desea realizar</p>
+        <form method="POST">
             <div class="container-selectors">
-                <select class="selectores" name="opUsuario" required>Seleccionar Usauario
-                    <option value="" selected disabled hidden>Seleccionar usuario</option>
-                    <?php
-                    foreach ($resultadoUsuario as $opciones) :
-                    ?>
-                        <option value="<?php echo $opciones['cedula'] ?>"><?php echo $opciones['nombre'] . '&nbsp;' . $opciones['apellido'] ?></option>
-                    <?php endforeach ?>
+                <select class="selectores" name="opMantenimiento">Seleccionar tipo de mantenimiento
+                    <option value="" selected disabled hidden>Seleccionar tipo de mantenimiento</option>
+                    <option value="1">COMBUSTIBLE</option>
+                    <option value="2">ACEITES Y FILTROS</option>
+                    <option value="3">ENGRASE GENERAL</option>
+                    <option value="4">CAMBIO DE LLANTAS</option>
+                    <option value="5">MANTENIMIENTO ELÉCTRICO</option>
+                    <option value="6">MANTENIMIENTO MECANICO</option>
+                    <option value="7">LAVADO GENERAL</option>
                 </select>
             </div>
-            <p class="article-service">Seleccione el servicio a prestar</p>
-            <div class="container-selectors">
-                <select class="selectores" name="opServicio" required>
-                    <option value="" selected disabled hidden>Seleccionar Servicio</option>
-                    <option value="1">CARGUE DOBLETROQUE</option>
-                    <option value="2">CARGUE TRACTOMULA</option>
-                    <option value="3">ARRUME CARBÓN</option>
-                    <option value="4">MEZLA DE CARBÓN</option>
-                    <option value="5">MÁS DE UN SERVICIO</option>
-                </select>
-            </div>
-            <p class="article-service">Seleccione un cargador</p>
+
+            <p class="article-service">Seleccione el cargador al que se realizara mantenimiento</p>
 
             <div class="flex-container">
                 <div class="flex-item">
@@ -106,20 +93,20 @@ include_once('includes/global.php');
                 <div class="flex-name form-check">
 
                     <?php
-                    if ($estado2 === 1) {
-                        echo '<input class="form-check-input" type="radio" name="cargador" value="2" id="c2">
-                    <label for="c2" class="form-check-label">Cargador 2</label>';
-                    } else {
-                        echo '<input class="form-check-input" type="radio" name="cargador" value="2" id="c2" disabled>
-                    <label for="c2" class="form-check-label">Cargador 2</label>';
-                    }
-                    ?>
+                if ($estado2 === 1) {
+                    echo '<input class="form-check-input" type="radio" name="cargador" value="2" id="c2">
+                <label for="c2" class="form-check-label">Cargador 2</label>';
+                } else {
+                    echo '<input class="form-check-input" type="radio" name="cargador" value="2" id="c2" disabled>
+                <label for="c2" class="form-check-label">Cargador 2</label>';
+                }
+                ?>
 
                 </div>
 
             </div>
-            <br>
-            <input class="article-button" name="inicia" type="submit" value="Iniciar Servicio">
+            <br><br>
+            <input class="article-button" type="submit" name="iniciarMantenimiento" value="Iniciar Mantenimiento">
         </form>
     </div>
 

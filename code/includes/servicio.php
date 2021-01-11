@@ -36,7 +36,7 @@ if (isset($_POST['inicia'])) {
                      break;
     
                 default:
-                    header('location:index-d.php');
+                    header('location:index.php');
             }
         }else{
             echo'<script type="text/javascript">

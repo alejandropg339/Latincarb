@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index.php');
+} else {
+    if ($_SESSION['rol'] != 3) {
+        header('location: index.php');
+    }
+}
+include_once('includes/finalizarServicioTr.php');
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,8 +33,8 @@
         <p class="article-service">Digite la cantidad de tractomulas cargadas.</p>
         <form method="POST">
             <div class="container-selectors">
-            <input class="article-input" type="number" name="cantDobletroque" placeholder="Cantidad de tractomulas">
-            <input class="article-button" type="submit" name="finServiceDt" value="Finalizar Servicio">
+            <input class="article-input" type="number" name="cantTractomula" placeholder="Cantidad de tractomulas">
+            <input class="article-button" type="submit" name="finServiceTr" value="Finalizar Servicio">
         </div>
         </form>
     </div>
