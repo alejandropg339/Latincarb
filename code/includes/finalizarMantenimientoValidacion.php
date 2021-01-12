@@ -4,6 +4,12 @@ include_once('servicio.php');
 include_once('global.php');
 
 
+$consultaCargador = "SELECT fecha_inicial, cargador_id FROM mantenimiento WHERE fecha_final IS NULL AND usuario_cedula= '$cedulaG'";
+$resultadoCargador2 = mysqli_query($conexion, $consultaCargador);
+$resultadoFechaInicial = mysqli_fetch_row($resultadoCargador2);
+$resultadoFinalCargador2 = $resultadoFechaInicial[0];
+$resultadoFinalCargador3 = $resultadoFechaInicial[1];
+
 if (isset($_POST['finMantenimiento'])) {
 
 
