@@ -2,6 +2,8 @@
 include_once('con_db.php');
 include_once('servicio.php');
 include_once('global.php');
+//include_once('global3.php');
+
 
 
 $consultaCargador = "SELECT fecha_inicial, cargador_id FROM mantenimiento WHERE fecha_final IS NULL AND usuario_cedula= '$cedulaG'";
@@ -12,12 +14,11 @@ $resultadoFinalCargador3 = $resultadoFechaInicial[1];
 
 if (isset($_POST['finMantenimiento'])) {
 
-
     if (strlen($_POST['costMantenimiento'])>=3) {
 
         $costo = $_POST['costMantenimiento'];
 
-        $busqueda = "SELECT id FROM mantenimiento WHERE fecha_final IS NULL AND usuario_cedula= '$cedulaG'";
+        $busqueda = "SELECT id, cargador_id FROM mantenimiento WHERE fecha_final IS NULL AND usuario_cedula= '$cedulaG'";
         $resultadoBusqueda = mysqli_query($conexion, $busqueda);
         $resultadoFinalBusqueda = mysqli_fetch_row($resultadoBusqueda);
 
@@ -27,7 +28,7 @@ if (isset($_POST['finMantenimiento'])) {
 
         if($resultadoUpdate){
             header('location: index.php');
-            $updateEstado2 = "UPDATE `cargador` SET `estado` = '1' WHERE `cargador`.`id` = '$estadoCargador'";
+            $updateEstado2 = "UPDATE `cargador` SET `estado` = '1' WHERE `cargador`.`id` = '$resultadoFinalBusqueda[1]'";
                     $updateResultado2 = mysqli_query($conexion, $updateEstado2);
         }else{
             echo'<script type="text/javascript">
@@ -43,4 +44,10 @@ if (isset($_POST['finMantenimiento'])) {
             </script>
             ';
     }
+}else{
+    echo'<script type="text/javascript">
+        alert("Hay un mantenimiento en curso por favor Terminelo dijitando el costo de este.");
+        window.location.href="#";
+        </script>
+        ';
 }
