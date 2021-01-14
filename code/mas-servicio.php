@@ -16,6 +16,7 @@ include_once('includes/finalizarServicioMas.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Mas de Un Servicio</title>
@@ -43,8 +44,7 @@ include_once('includes/finalizarServicioMas.php');
                     </div>
                     <p class="article-service-ms">Seleccione si realizo al menos uno de estos dos servicios</p>
                     <br>
-                    <div class="flex-container">
-                        <div class="flex-name">
+                    <div class="flex-container">     
                         <div class="flex-name form-check">
                                 <input class="form-check-input" type="radio" name="servicio" value="cargadorUno" id="ac">
                                 <label for="ac" class="form-check-label">Arrume carbón</label>
@@ -57,8 +57,9 @@ include_once('includes/finalizarServicioMas.php');
                         <br>
                         <input class="article-button" type="submit" name="finServiceMas" value="Finalizar Servicio">
             </form>
-    </div>
-        
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
