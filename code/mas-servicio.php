@@ -45,24 +45,13 @@ include_once('includes/finalizarServicioMas.php');
                     <br>
                     <div class="flex-container">
                         <div class="flex-name">
-                            <label class="custom-radio-checkbox">
-                                <!-- Input oculto -->
-                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="cargadorUno">
-                                <!-- Imagen en sustitucion --> 
-                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-                                <!-- Texto -->
-                                <span class="custom-radio-checkbox__text">Arrume carbón</span>
-                            </label>
+                        <div class="flex-name form-check">
+                                <input class="form-check-input" type="radio" name="servicio" value="cargadorUno" id="ac">
+                                <label for="ac" class="form-check-label">Arrume carbón</label>
                         </div>
-                        <div class="flex-name">
-                            <label class="custom-radio-checkbox">
-                                <!-- Input oculto -->
-                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="cargadorDos">
-                                <!-- Imagen en sustitucion --> 
-                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-                                <!-- Texto -->
-                                <span class="custom-radio-checkbox__text">Mezcla carbón</span>
-                            </label>
+                        <div class="flex-name form-check">
+                                <input class="form-check-input" type="radio" name="servicio" value="cargadorDos" id="mc">
+                                <label for="mc" class="form-check-label">Mezcla carbón</label>
                         </div>
                         </div>
                         <br>

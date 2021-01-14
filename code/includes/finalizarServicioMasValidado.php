@@ -85,4 +85,10 @@ if (isset($_POST['finServiceMas'])) {
     } else {
         header('location: nuevo-servicio.php');
     }
+}else{
+    echo '<script type="text/javascript">
+    alert("Hay un servicio en curso por favor terminelo lo antes posible");
+    window.location.href="#";
+    </script>
+    ';
 }

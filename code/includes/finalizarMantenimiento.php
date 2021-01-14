@@ -1,7 +1,7 @@
 <?php
 include_once('con_db.php');
 include_once('servicio.php');
-include_once('global.php');
+include_once('global3.php');
 
 
 if (isset($_POST['finMantenimiento'])) {

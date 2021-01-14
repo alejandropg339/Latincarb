@@ -27,7 +27,7 @@ include_once('includes/iniciar-mantenimiento.php');
 <body>
     <div class="header">
         <div class="backButton">
-            <a class="img-backButton" href="index-operario.html"><img src="images/back_button.png" alt=""></a>
+            <a class="img-backButton" href="index-operario.php"><img src="images/back_button.png" alt=""></a>
         </div>
         <div class="header-logo-servicio">
             <img src="images/LOGO2.jpg" alt="latincarb">
