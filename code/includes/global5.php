@@ -1,0 +1,75 @@
+<?php
+
+$GLOBALS['cantDTF']="";
+$GLOBALS['cantTRF']="";
+$GLOBALS['cantDTF2']="";
+$GLOBALS['cantTRF2']="";
+/*$GLOBALS['tCombustibleF']="";
+$GLOBALS['tAceiteF']="";
+$GLOBALS['tEngraseF']="";
+$GLOBALS['tLlantasF']="";
+$GLOBALS['tMelectricoF']="";
+$GLOBALS['tMmecanicoF']="";
+$GLOBALS['tLavadoF']="";
+$GLOBALS['cCombustibleF']="";
+$GLOBALS['cAceiteF']="";
+$GLOBALS['cEngraseF']="";
+$GLOBALS['cLlantasF']="";
+$GLOBALS['cMelectricoF']="";
+$GLOBALS['cMmecanicoF']="";
+$GLOBALS['cLavadoF']="";*/
+$GLOBALS['tArrumeF2']="";
+$GLOBALS['tArrumeF']="";
+$GLOBALS['tMezclaF']="";
+$GLOBALS['tMezclaF2']="";
+$GLOBALS['tUsoF']="";
+
+if(isset($_POST['generarInforme'])){
+    $cantDTF = $_SESSION['cantidadDT'];
+    $cantTRF = $_SESSION['cantidadTR'];
+    $cantDTF2 = $_SESSION['cantidadDT2'];
+    $cantTRF2 = $_SESSION['cantidadTR2'];
+    /*$tCombustibleF = $_SESSION['tCombustible'];
+    $tAceiteF = $_SESSION['tAceite'];
+    $tEngraseF = $_SESSION['tEngrase'];
+    $tLlantasF = $_SESSION['tLlantas'];
+    $tMelectricoF = $_SESSION['tMelectrico'];
+    $tMmecanicoF = $_SESSION['tMmecanico'];
+    $tLavadoF = $_SESSION['tLavado'];
+    $cCombustibleF = $_SESSION['cCombustible'];
+    $cAceiteF = $_SESSION['cAceite'];
+    $cEngraseF = $_SESSION['cEngrase'];
+    $cLlantasF = $_SESSION['cLlantas'];
+    $cMelectricoF = $_SESSION['cMelectrico'];
+    $cMmecanicoF = $_SESSION['cMmecanico'];
+    $cLavadoF = $_SESSION['cLavado'];*/
+    $tArrumeF2 = $_SESSION['tArrume2'];
+    $tArrumeF = $_SESSION['tArrume'];
+    $tMezclaF2 = $_SESSION['tMezcla2'];
+    $tMezclaF = $_SESSION['tMezcla'];
+    $tUsoF = $_SESSION['tUso'];
+}else{
+    $cantDTF = $_SESSION['cantidadDT'];
+    $cantTRF = $_SESSION['cantidadTR'];
+    $cantDTF2 = $_SESSION['cantidadDT2'];
+    $cantTRF2 = $_SESSION['cantidadTR2'];
+   /* $tCombustibleF = $_SESSION['tCombustible'];
+    $tAceiteF = $_SESSION['tAceite'];
+    $tEngraseF = $_SESSION['tEngrase'];
+    $tLlantasF = $_SESSION['tLlantas'];
+    $tMelectricoF = $_SESSION['tMelectrico'];
+    $tMmecanicoF = $_SESSION['tMmecanico'];
+    $tLavadoF = $_SESSION['tLavado'];
+    $cCombustibleF = $_SESSION['cCombustible'];
+    $cAceiteF = $_SESSION['cAceite'];
+    $cEngraseF = $_SESSION['cEngrase'];
+    $cLlantasF = $_SESSION['cLlantas'];
+    $cMelectricoF = $_SESSION['cMelectrico'];
+    $cMmecanicoF = $_SESSION['cMmecanico'];
+    $cLavadoF = $_SESSION['cLavado'];*/
+    $tArrumeF2 = $_SESSION['tArrume2'];
+    $tArrumeF = $_SESSION['tArrume'];
+    $tMezclaF2 = $_SESSION['tMezcla2'];
+    $tMezclaF = $_SESSION['tMezcla'];
+    $tUsoF = $_SESSION['tUso'];
+}

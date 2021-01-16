@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index.php');
+} else {
+    if ($_SESSION['rol'] != 4) {
+        header('location: index.php');
+    }
+}
+
+include_once('includes/informe-usuario-back.php');
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,30 +39,30 @@
     <div class="text">
         <p>Seleccione la fecha inicial desde la cual desea generar el informe </p>
     </div>
-
+    <form method="POST">
     <div class="flex-container">
-        <form>
+        
             <input class="fechas" type="date" name="fechaInicial" placeholder="Fecha Final">
-        </form>
+        
 
     </div>
     <div class="text">
         <p>Seleccione la fecha final desde la cual desea generar el informe </p>
     </div>
     <div class="flex-container">
-        <form>
+        
             <input class="fechas" type="date" name="fechaFinal" placeholder="Fecha Final">
-        </form>
+        
 
     </div>
     <div class="article">
         <br>
-        <form>
+        
             <input class="article-button" type="submit" name="generarInforme" value="Generar Informe">
-        </form>
+        
 
     </div>
-
+</form>
 </body>
 
 </html>
