@@ -7,7 +7,6 @@ if (!isset($_SESSION['rol'])) {
         header('location: index.php');
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -30,36 +29,32 @@ if (!isset($_SESSION['rol'])) {
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Informe Cargador 1</h1>
+            <h1>Informe Cargador 2</h1>
         </div>
     </div>
 
     <div class="text">
         <p>Seleccione la fecha inicial desde la cual desea generar el informe </p>
     </div>
+    <form method="POST">
+        <div class="flex-container">
 
-    <div class="flex-container">
-        <form>
             <input class="fechas" type="date" name="fechaInicial" placeholder="Fecha Final">
-        </form>
 
-    </div>
-    <div class="text">
-        <p>Seleccione la fecha final desde la cual desea generar el informe </p>
-    </div>
-    <div class="flex-container">
-        <form>
+
+        </div>
+        <div class="text">
+            <p>Seleccione la fecha final desde la cual desea generar el informe </p>
+        </div>
+        <div class="flex-container">
             <input class="fechas" type="date" name="fechaFinal" placeholder="Fecha Final">
-        </form>
 
-    </div>
-    <div class="article">
-        <br>
-        <form>
+        </div>
+        <div class="article">
+            <br>
             <input class="article-button" type="submit" name="generarInforme" value="Generar Informe">
-        </form>
-
-    </div>
+        </div>
+    </form>
 
 </body>
 

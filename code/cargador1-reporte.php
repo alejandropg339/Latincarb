@@ -8,6 +8,7 @@ if (!isset($_SESSION['rol'])) {
     }
 }
 include_once('includes/inofrme-cargador.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

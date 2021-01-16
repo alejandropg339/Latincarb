@@ -9,7 +9,39 @@ if (isset($_POST['generarInforme'])) {
         $f1 = $_POST['fechaInicial'];
         $f2 = $_POST['fechaFinal'];
 
-        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas), TIMESTAMPDIFF(HOUR, '$f1', '$f2') FROM servicio WHERE cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+
+
+        //mientras sea difrnte d null
+
+        $consultaP1= "SELECT id FROM servicio WHERE cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $result = mysqli_query($conexion, $consultaP1);
+        
+        $resultadoFinalPro =0;
+        
+        while($fila= mysqli_fetch_array($result)){
+            $filaPrueba = (int)$fila['id'];
+            $fechas = "SELECT fecha_inicial, fecha_final  FROM servicio WHERE id='$filaPrueba;'"; 
+            $resultFechas = mysqli_query($conexion, $fechas);
+            $resultFinalFechas = mysqli_fetch_row($resultFechas);
+        
+            $horas ="SELECT TIMESTAMPDIFF(MINUTE, '$resultFinalFechas[0]', '$resultFinalFechas[1]') FROM servicio";
+            $resultHoras = mysqli_query($conexion, $horas);
+            $resultFinalHoras = mysqli_fetch_row($resultHoras);
+        
+            
+            $resultadoFinalPro = $resultadoFinalPro + $resultFinalHoras[0];
+        
+            
+        }
+
+        $resultadoFinalPro=$resultadoFinalPro/60;
+        $resultadoFinalPro=(double)$resultadoFinalPro;
+
+
+
+        
+
+        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
 
         $resultadoC1 = mysqli_query($conexion,$consultaC1);
 
@@ -17,8 +49,8 @@ if (isset($_POST['generarInforme'])) {
 
         $GLOBALS['cantDobletroque'] = $finalC1[0];
         $GLOBALS['cantTractomula'] = $finalC1[1];
-        $GLOBALS['tiempoArrume'] = $finalC1[2];
-        $GLOBALS['tiempoMezcla'] = $finalC1[2];
+        $GLOBALS['tiempoArrume'] = $resultadoFinalPro;
+        $GLOBALS['tiempoMezcla'] = $resultadoFinalPro;
 
         $_SESSION['cantidaDT'] = $cantDobletroque;
         $_SESSION['cantidadTR'] = $cantTractomula;
