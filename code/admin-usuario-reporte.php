@@ -8,6 +8,8 @@ if (!isset($_SESSION['rol'])) {
     }
 }
 include_once('includes/usuarios.php');
+include_once('includes/informe-admin-usuario.php');
+//include_once('includes/pruebaaa.php');
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +39,7 @@ include_once('includes/usuarios.php');
     <div class="text">
     <p>Selecciones el usuario al que se le generará el informe</p>
     </div>
+    <form method="POST">
     <div class=" article">
     <div class="container-selectors">
                 <select class="selectores" name="opUsuario" required>Seleccionar Usauario
@@ -55,27 +58,25 @@ include_once('includes/usuarios.php');
     </div>
 
     <div class="flex-container">
-        <form>
+        
             <input class="fechas" type="date" name="fechaInicial" placeholder="Fecha Final">
-        </form>
+        
 
     </div>
     <div class="text">
         <p>Seleccione la fecha final desde la cual desea generar el informe </p>
     </div>
     <div class="flex-container">
-        <form>
+  
             <input class="fechas" type="date" name="fechaFinal" placeholder="Fecha Final">
-        </form>
 
     </div>
     <div class="article">
         <br>
-        <form>
             <input class="article-button" type="submit" name="generarInforme" value="Generar Informe">
-        </form>
 
     </div>
+    </form>
 
 </body>
 
