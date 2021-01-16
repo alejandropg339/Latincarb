@@ -8,6 +8,8 @@ if (!isset($_SESSION['rol'])) {
     }
 }
 
+//include_once('includes/reportes-opt.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,19 +39,17 @@ if (!isset($_SESSION['rol'])) {
     <div class="article">
         <p>Seleccion una de las opciones a la cual le desea generar un informe </p>
     </div>
-
     <div class="flex-container">
         <div class="flex-item">
-            <input class="img-button1" type="image" src="images/camion_verde.jpg" name="cargadorUno" value="" >
+            <a href="cargador1-reporte.php"><img style="border-radius: 5px;" class="img-button1" src="images/camion_verde.jpg"></a>
         </div>
         <div class="flex-item">
-            <input class="img-button2" type="image" src="images/camion_verde.jpg" name="cargadorDos" value="">
+        <a href="cargador2-reporte.php"><img style="border-radius: 5px;" class="img-button2" src="images/camion_verde.jpg"></a>
         </div>
         <div class="flex-item">
-            <input class="img-button3" type="image" src="images/user-green.png" name="usuario" value="">
+        <a href="admin-usuario-reporte.php"><img style="border-radius: 5px;" class="img-button3" src="images/user-green.png"></a>
         </div>
     </div>
-
     <div class="flex-container">
         <div class="flex-name">Cargador 1
         </div>

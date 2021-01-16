@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index.php');
+} else {
+    if ($_SESSION['rol'] != 2) {
+        header('location: index.php');
+    }
+}
+include_once('includes/usuarios.php');
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,9 +31,24 @@
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Informe Cargador 1</h1>
+            <h1>Informe Usuario</h1>
         </div>
     </div>
+    <div class="text">
+    <p>Selecciones el usuario al que se le generará el informe</p>
+    </div>
+    <div class=" article">
+    <div class="container-selectors">
+                <select class="selectores" name="opUsuario" required>Seleccionar Usauario
+                    <option value="" selected disabled hidden>Seleccionar usuario</option>
+                    <?php
+                    foreach ($resultadoUsuario as $opciones) :
+                    ?>
+                        <option value="<?php echo $opciones['cedula'] ?>"><?php echo $opciones['nombre'] . '&nbsp;' . $opciones['apellido'] ?></option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+            </div>
 
     <div class="text">
         <p>Seleccione la fecha inicial desde la cual desea generar el informe </p>

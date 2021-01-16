@@ -1,3 +1,17 @@
+<?php
+session_start();
+if (!isset($_SESSION['rol'])) {
+    header('location: index.php');
+} else {
+    if ($_SESSION['rol'] != 2) {
+        header('location: index.php');
+    }
+}
+include_once('includes/usuarios.php');
+include_once('includes/inofrme-cargador.php');
+include_once('includes/global4.php');
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -37,28 +51,28 @@
             <tr>
 
                 <td>Total de Dobletroques </td>
-                <td>EJEMPLo</td>
+                <td><?php echo $cantDTF?></td>
 
             </tr>
 
             <tr>
 
                 <td>Total de tractomulas</td>
-                <td>EJEMPLO</td>
+                <td><?php echo $cantTRF?></td>
 
             </tr>
 
             <tr>
 
                 <td>Tiempo arrume de carbón</td>
-                <td>EJEMPLO</td>
+                <td><?php echo $tArrumeF." Horas"?></td>
 
             </tr>
 
             <tr>
 
                 <td>Tiempo mezcla de carbón</td>
-                <td>EJEMPLO</td>
+                <td><?php echo $tMezclaF." Horas"?></td>
 
             </tr>
 
