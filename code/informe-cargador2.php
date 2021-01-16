@@ -8,7 +8,7 @@ if (!isset($_SESSION['rol'])) {
     }
 }
 include_once('includes/usuarios.php');
-include_once('includes/inofrme-cargador.php');
+include_once('includes/informe-cargador-dos.php');
 include_once('includes/global4.php');
 ?>
 
@@ -33,7 +33,7 @@ include_once('includes/global4.php');
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Informe Cargador 1</h1>
+            <h1>Informe Cargador 2</h1>
             <h3>Informe de Servicios</h3>
             <p><?php echo "El tiempo total de uso es: ".$tUsoF." Horas"?></p>
         </div>

@@ -7,6 +7,8 @@ if (!isset($_SESSION['rol'])) {
         header('location: index.php');
     }
 }
+
+include_once('includes/informe-cargador-dos.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
