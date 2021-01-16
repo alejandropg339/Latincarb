@@ -11,7 +11,7 @@ if (isset($_POST['generarInforme'])) {
 
         //mientras sea difrnte d null
 
-        $consultaP1= "SELECT id FROM servicio WHERE cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP1= "SELECT id FROM servicio WHERE cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result = mysqli_query($conexion, $consultaP1);
         
         $resultadoFinalPro =0;
@@ -35,7 +35,7 @@ if (isset($_POST['generarInforme'])) {
         $resultadoFinalPro=$resultadoFinalPro/3600;
         $resultadoFinalPro= bcdiv($resultadoFinalPro, '1', 3);
 
-        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
 
         $resultadoC1 = mysqli_query($conexion,$consultaC1);
 
@@ -52,7 +52,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo combustible
 
-        $consultaP2= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP2= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result2 = mysqli_query($conexion, $consultaP2);
         
         $resultadoFinalPro2 =0;
@@ -81,7 +81,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Aceite y filtros
 
-        $consultaP3= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP3= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result3 = mysqli_query($conexion, $consultaP3);
         
         $resultadoFinalPro3 =0;
@@ -110,7 +110,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Engrase general
 
-        $consultaP4= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 3 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP4= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 3 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result4 = mysqli_query($conexion, $consultaP4);
         
         $resultadoFinalPro4 =0;
@@ -139,7 +139,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Cambio de llantas
 
-        $consultaP5= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 4 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP5= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 4 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result5 = mysqli_query($conexion, $consultaP5);
         
         $resultadoFinalPro5 =0;
@@ -168,7 +168,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Manteniminto Eléctrico
 
-        $consultaP6= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 5 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP6= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 5 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result6 = mysqli_query($conexion, $consultaP6);
         
         $resultadoFinalPro6 =0;
@@ -197,7 +197,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Manteniminto Mecánico
 
-        $consultaP7= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 6 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP7= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 6 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result7 = mysqli_query($conexion, $consultaP7);
         
         $resultadoFinalPro7 =0;
@@ -226,7 +226,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Lavado general
 
-        $consultaP8= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 7 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP8= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 7 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result8 = mysqli_query($conexion, $consultaP8);
         
         $resultadoFinalPro8 =0;
@@ -255,7 +255,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Combustible
 
-        $consultaP9= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP9= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result9 = mysqli_query($conexion, $consultaP9);
         
         $resultadoFinalPro9 =0;
@@ -276,7 +276,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Aceite y filtros
 
-        $consultaP10= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP10= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result10 = mysqli_query($conexion, $consultaP10);
         
         $resultadoFinalPro10 =0;
@@ -297,7 +297,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Engrase General
 
-        $consultaP11= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 3 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP11= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 3 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result11 = mysqli_query($conexion, $consultaP11);
         
         $resultadoFinalPro11 =0;
@@ -318,7 +318,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Cambio de llantas
 
-        $consultaP12= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 4 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP12= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 4 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result12 = mysqli_query($conexion, $consultaP12);
         
         $resultadoFinalPro12 =0;
@@ -339,7 +339,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Mantenimiento Eléctrico
 
-        $consultaP13= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 5 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP13= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 5 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result13 = mysqli_query($conexion, $consultaP13);
         
         $resultadoFinalPro13 =0;
@@ -360,7 +360,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Mantenimiento Mecánico
 
-        $consultaP14= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 6 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP14= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 6 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result14 = mysqli_query($conexion, $consultaP14);
         
         $resultadoFinalPro14 =0;
@@ -381,7 +381,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Costo Lavado General
 
-        $consultaP15= "SELECT id FROM mantenimiento WHERE cargador_id=1 AND tipo_mantenimiento_id = 7 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP15= "SELECT id FROM mantenimiento WHERE cargador_id=2 AND tipo_mantenimiento_id = 7 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result15 = mysqli_query($conexion, $consultaP15);
         
         $resultadoFinalPro15 =0;
@@ -402,7 +402,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Arrume de carbón
 
-        $consultaP16= "SELECT id FROM servicio WHERE cargador_id=1 AND tipo_servicio_id = 3  AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP16= "SELECT id FROM servicio WHERE cargador_id=2 AND tipo_servicio_id = 3  AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result16 = mysqli_query($conexion, $consultaP16);
         
         $resultadoFinalPro16 =0;
@@ -431,7 +431,7 @@ if (isset($_POST['generarInforme'])) {
 
         //Tiempo Mezcla de carbón
 
-        $consultaP17= "SELECT id FROM servicio WHERE cargador_id=1 AND tipo_servicio_id = 4  AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaP17= "SELECT id FROM servicio WHERE cargador_id=2 AND tipo_servicio_id = 4  AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
         $result17 = mysqli_query($conexion, $consultaP17);
         
         $resultadoFinalPro17 =0;
@@ -459,7 +459,7 @@ if (isset($_POST['generarInforme'])) {
         $_SESSION['tMezcla'] = $tiempoMezcla;
 
         if($resultadoC1){
-            header('location: informe-cargador1.php');
+            header('location: informe-cargador2.php');
         }else{
             echo'<script type="text/javascript">
             alert("Algo Salio mal por favor intentelo de nuevo");
