@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION['rol'])) {
     header('location: index.php');
 } else {
-    if ($_SESSION['rol'] != 3) {
+    if ($_SESSION['rol'] != 3 && $_SESSION['rol'] != 2) {
         header('location: index.php');
     }
 }
@@ -30,6 +30,7 @@ include_once('includes/global.php');
 </head>
 
 <body>
+    <div class="container">
     <div class="header">
         <div class="backButton">
             <a class="img-backButton" href="index-operario.php"><img src="images/back_button.png" alt=""></a>
@@ -43,7 +44,9 @@ include_once('includes/global.php');
     </div>
     <div class="article">
     <form method="POST">
-            <p class="article-service">Seleccione el usuario al que se le prestará el servicio</p>
+            <div class="text-container ms-md-5">
+            <p class="article-service ms-md-5">Seleccione el usuario al que se le prestará el servicio</p>
+            </div>
             <div class="container-selectors">
                 <select class="selectores" name="opUsuario" required>Seleccionar Usauario
                     <option value="" selected disabled hidden>Seleccionar usuario</option>
@@ -54,7 +57,9 @@ include_once('includes/global.php');
                     <?php endforeach ?>
                 </select>
             </div>
-            <p class="article-service">Seleccione el servicio a prestar</p>
+            <div class="text-container ms-md-5">
+            <p class="article-service ms-md-5">Seleccione el servicio a prestar</p>
+            </div>
             <div class="container-selectors">
                 <select class="selectores" name="opServicio" required>
                     <option value="" selected disabled hidden>Seleccionar Servicio</option>
@@ -65,8 +70,9 @@ include_once('includes/global.php');
                     <option value="5">MÁS DE UN SERVICIO</option>
                 </select>
             </div>
-            <p class="article-service">Seleccione un cargador</p>
-
+            <div class="text-container ms-md-5">
+            <p class="article-service ms-md-5">Seleccione un cargador</p>
+            </div>
             <div class="flex-container">
                 <div class="flex-item">
                     <?php
@@ -119,10 +125,10 @@ include_once('includes/global.php');
 
             </div>
             <br>
-            <input class="article-button" name="inicia" type="submit" value="Iniciar Servicio">
+            <input class="article-button mb-3" name="inicia" type="submit" value="Iniciar Servicio">
         </form>
     </div>
-
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 

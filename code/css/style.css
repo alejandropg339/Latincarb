@@ -445,7 +445,7 @@ Estilos app
   text-align: justify;
   margin: auto;
   text-align: center;
-  padding: 20px 50px 50px 50px;
+  padding: 20px 50px 50px 40px;
 }
 
 .article .article-button {
@@ -632,6 +632,11 @@ Informe cargador 1
   margin-right: 10%;
   margin-bottom: 2%;
   margin-top: 4%;
+}
+
+.text-container{
+  display: inline-flex;
+  width: 75%;
 }
 
 /*--------------------------------------------
