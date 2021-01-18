@@ -12,7 +12,7 @@ if(!isset($_SESSION['rol'])){
 }
 
 include_once('includes/actividades-back.php');
-include_once('includes/global.php');
+include_once('includes/global6.php');
 
 ?>
 
@@ -35,12 +35,12 @@ include_once('includes/global.php');
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
         <div class="header-bievenida">
-            <h1>Bienvenido<?php echo "".$cedulaG?></h1>
+            <h1>Bienvenido<?php echo " ".$nombreG?></h1>
         </div>
     </div>
 
     <div class="article">
-        <p>Seleccione una actividad a realizar </p>
+        <p style="padding: 20px 50px 20px 40px;">Seleccione una actividad a realizar </p>
         <?php
             for ($i = 1; $i <= $numero; $i++) {
                 $mostrar = mysqli_fetch_array($resultado)

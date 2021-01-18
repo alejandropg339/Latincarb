@@ -43,7 +43,7 @@ include_once('includes/iniciar-mantenimiento.php');
             </div>
             <form method="POST">
                 <div class="container-selectors">
-                    <select class="selectores" name="opMantenimiento">Seleccionar mantenimiento
+                    <select class="selectores" name="opMantenimiento" required>Seleccionar mantenimiento
                         <option value="" selected disabled hidden>Seleccionar mantenimiento</option>
                         <option value="1">COMBUSTIBLE</option>
                         <option value="2">ACEITES Y FILTROS</option>

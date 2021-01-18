@@ -40,7 +40,7 @@ require("includes/register.php");
         <div class="container-selectors-ns">
             <form method="POST">
                 <!--<div class="container-selectors">-->
-                <input class="article-input" type="number" name="cedulaRegistro" placeholder="Cedula*" required>
+                <input class="article-input" type="number" name="cedulaRegistro" placeholder="Cedula o nit*" required>
         </div>
         <p class="article-service-ms mx-lg-5">Digite el nombre del usuario</p>
         <div class="container-selectors-ns">
@@ -49,12 +49,12 @@ require("includes/register.php");
 
         <p class="article-service-ms mx-lg-5">Digite el apellido del usuario</p>
         <div class="container-selectors-ns">
-            <input class="article-input" type="text" name="apellidoRegistro" placeholder="Apellido del usuario*" required>
+            <input class="article-input" type="text" name="apellidoRegistro" placeholder="Apellido del usuario">
         </div>
 
         <p class="article-service-ms mx-lg-5">Digite el correo del usuario</p>
         <div class="container-selectors-ns">
-            <input class="article-input" type="email" name="correoRegistro" placeholder="Correo del usuario*">
+            <input class="article-input" type="email" name="correoRegistro" placeholder="Correo del usuario">
         </div>
 
         <p class="article-service-ms mx-lg-5">Digite la contraseña del usuario</p>
@@ -67,12 +67,12 @@ require("includes/register.php");
             <input class="article-input" type="text" name="passwordRegistro2" placeholder="Contraseña del usuario*" required>
         </div>
 
-        <p class="article-service-ms mx-lg-5">Digite el numero del usuario</p>
+        <p class="article-service-ms mx-lg-5">Digite el teléfono del usuario</p>
         <div class="container-selectors-ns">
-            <input class="article-input" type="number" name="numeroRegistro" placeholder="Numero del usuario*" required>
+            <input class="article-input" type="number" name="numeroRegistro" placeholder="Teléfono del usuario*" required>
         </div>
 
-        <p class="article-service mx-lg-5">Seleccione el tipo de mantenimiento que desea realizar</p>
+        <p class="article-service mx-lg-5">Seleccione el rol del usuario a registrar</p>
         <div class="container-selectors">
             <select class="selectores" name="optRegistro">Seleccionar rol de usuario
                 <option value="" selected disabled hidden>Seleccionar rol de usuario</option>
