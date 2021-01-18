@@ -1,5 +1,6 @@
 <?php
 include_once('includes/db.php');
+include_once('con_db.php');
 
 session_start();
 
@@ -27,6 +28,14 @@ if (isset($_POST['username']) && ($_POST['password'])) {
 	$username = $_POST['username'];
 	$password = md5($_POST['password']);
 	$_SESSION['userG']=$username;
+
+	$consultaNombre = "SELECT nombre from usuario where username = '$username' AND contrasena = '$password' ";
+	$resultadoPreNombre =mysqli_query($conexion,$consultaNombre);
+	$resultadoNombre = mysqli_fetch_row($resultadoPreNombre);
+
+	$GLOBALS['nombreUsuario'] = $resultadoNombre[0];
+	$_SESSION['nombreUser'] = $nombreUsuario;
+
 	
 	$db = new db();
 
