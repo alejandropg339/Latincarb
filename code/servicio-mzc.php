@@ -18,6 +18,7 @@ include_once('includes/finalizarServicioMzc.php');
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Servicio Mezlca Carbón</title>
 </head>
