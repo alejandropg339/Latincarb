@@ -70,7 +70,7 @@ if (isset($_POST['username']) && ($_POST['password'])) {
         /*echo "<p style='color:red;>Usuario y/o contraseña incorrectas</p>";*/
 		echo'<script type="text/javascript">
     alert("Usuario y/o contraseña incorrectas");
-    window.location.href="index-d.php";
+    window.location.href="index.php";
 	</script>
 	';
 

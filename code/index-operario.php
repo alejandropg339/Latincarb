@@ -21,6 +21,7 @@ include_once('includes/global6.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb42ca2408.js" crossorigin="anonymous"></script>
     <title>Bienvenido Operario</title>

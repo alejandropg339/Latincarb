@@ -19,6 +19,7 @@ include_once('includes/finalizarServicio.php');
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Servicio Dobletroque</title>
 </head>

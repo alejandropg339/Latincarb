@@ -19,12 +19,16 @@ require("includes/register.php");
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Registro de Usuarios</title>
 </head>
 
 <body>
     <div class="container-sm">
+    <div class="backButton">
+            <a class="img-backButton" href="index.php"><img src="images/back_button.png" alt=""></a>
+        </div>
     <div class="row mx-lg-5">
     <div class="col mx-lg-5">
     <div class="header">

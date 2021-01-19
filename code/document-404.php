@@ -1,15 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['rol'])) {
-    header('location: index.php');
-} else {
-    if ($_SESSION['rol'] != 3 && $_SESSION['rol'] != 2) {
-        header('location: index.php');
-    }
-}
-include_once('includes/finalizarServicioTr.php');
-
-?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,7 +9,7 @@ include_once('includes/finalizarServicioTr.php');
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>Servicio Tractomulas</title>
+    <title>Servicio arrume Carbón</title>
 </head>
 
 <body>
@@ -30,21 +18,19 @@ include_once('includes/finalizarServicioTr.php');
             <div class="header-logo">
                 <img src="images/LOGO2.jpg" alt="latincarb">
                 <div class="header-bievenida">
-                    <h1 class="big-title">Servicio de Tractomulas</h1>
+                    <h1 class="big-title">Página no encontada</h1>
                 </div>
             </div>
             <div class="article">
                 <p class="article-espacio"></p>
-                <div class="ms-md-5">
-                    <p class="article-service ms-md-5">Digite la cantidad de tractomulas cargadas.</p>
-                </div>
-                <form method="POST">
-                    <div class="container-selectors">
-                        <input class="article-input" type="number" name="cantTractomula"
-                            placeholder="Cantidad de tractomulas">
-                        <input class="article-button" type="submit" name="finServiceTr" value="Finalizar Servicio">
-                    </div>
-                </form>
+                
+                    <p class="article-service-center "><strong>Error 404<strong> la página a la que está intentando acceder no existe por favor dirijase al inicio de la aplicaión</p>
+                        
+                    <br>
+
+                        
+               
+                <a class="article-button" href="index.php" style="text-decoration: none;">Inicio</a>
             </div>
         </div>
         <script src="js/jquery.js"></script>

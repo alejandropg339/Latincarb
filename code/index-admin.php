@@ -23,14 +23,17 @@ include_once('includes/global6.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb42ca2408.js" crossorigin="anonymous"></script>
     <title>Bienvenido Administrador</title>
 </head>
 
 <body>
     <div class="header">
-    <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
+    <a class="log" style="color: green; padding-top:40px; padding:20px; display:inline-block; margin: auto; text-decoration:none;" href="logout.php">Cerrar Sesión &nbsp;<i class="fas fa-sign-out-alt"></i></a>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
         </div>
@@ -46,7 +49,7 @@ include_once('includes/global6.php');
                 $mostrar = mysqli_fetch_array($resultado)
             ?>
                 <tr>
-                    <td align="center"><?php echo '<ul style="list-style-type:none; margin-left: -40px;" ><li style="list-style:none;">' . '<a class="article-button" href="' . $mostrar['enlace'] . '" target="_self">' . $mostrar['actividad'] . '</a>' . '</li></ul>'; ?></td>
+                    <td align="center"><?php echo '<ul style="list-style-type:none; margin-left: -40px;" ><li style="list-style:none;">' . '<a class="article-button" style="text-decoration:none;" href="' . $mostrar['enlace'] . '" target="_self">' . $mostrar['actividad'] . '</a>' . '</li></ul>'; ?></td>
                 </tr>
 
             <?php
@@ -60,6 +63,8 @@ include_once('includes/global6.php');
         <div class="article-espacio"></div>
         <input class="article-button" type="submit" name="estadoCargadores" value="Estado de los Cargadores">-->
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
