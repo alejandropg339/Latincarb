@@ -30,6 +30,7 @@
 			<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 			<link rel="preconnect" href="https://fonts.gstatic.com">
 			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="icon" href="images/ensayo.png">
 			<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 			<!--//Style-CSS -->
 		</head>
