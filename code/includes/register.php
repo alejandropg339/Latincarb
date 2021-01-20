@@ -10,7 +10,6 @@
         if(
             strlen($_POST['cedulaRegistro']) >=7 && 
             strlen($_POST['nombreRegistro']) >=1 && 
-            strlen($_POST['apellidoRegistro']) >=1 && 
             strlen($_POST['passwordRegistro']) >=7 && 
             strlen($_POST['passwordRegistro2']) >=7 && 
             strlen($_POST['numeroRegistro']) >=7 && 
