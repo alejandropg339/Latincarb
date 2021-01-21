@@ -28,7 +28,7 @@ include_once('includes/global4.php');
 <body>
     <div class="header">
         <div class="backButton">
-            <a class="img-backButton" href="index-admin.html"><img src="images/back_button.png" alt=""></a>
+            <a class="img-backButton" href="index-admin.php"><img src="images/back_button.png" alt=""></a>
         </div>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
