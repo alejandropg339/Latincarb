@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>Erro 404</title>
+    <title>Error 404</title>
 </head>
 
 <body>
