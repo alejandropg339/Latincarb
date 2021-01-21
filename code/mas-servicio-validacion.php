@@ -47,11 +47,11 @@ include_once('includes/finalizarServicioMasValidado.php');
                     <br>
                     <div class="flex-container">
                         <div class="flex-name form-check">
-                                <input class="form-check-input" type="radio" name="servicio" value="cargadorUno" id="ac">
+                                <input class="form-check-input" type="checkbox" name="servicio" value="1" id="ac">
                                 <label for="ac" class="form-check-label">Arrume carbón</label>
                         </div>
                         <div class="flex-name form-check">
-                                <input class="form-check-input" type="radio" name="servicio" value="cargadorDos" id="mc">
+                                <input class="form-check-input" type="checkbox" name="servicio1" value="2" id="mc">
                                 <label for="mc" class="form-check-label">Mezcla carbón</label>
                         </div>
                         </div>

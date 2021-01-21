@@ -5,10 +5,10 @@ include_once('con_db.php');
 
 if(isset($_POST['actualizarContrasena'])){
     $usuario = $_POST['opUsuario'];
-    $passwordNew = md5($_POST['contrasenaNew']);
+    $password4 = $_POST['contrasenaNew'];
 
-    if(strlen($usuario>=1) && strlen($passwordNew>=6)){
-        
+    if(strlen($usuario)>=1 && strlen($password4)>=6){
+        $passwordNew = md5($password4);
         $updatePassword = "UPDATE usuario SET contrasena = '$passwordNew' WHERE usuario.cedula = '$usuario';";
         $resultadoUpdate = mysqli_query($conexion,$updatePassword);
 

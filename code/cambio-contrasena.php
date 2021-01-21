@@ -7,7 +7,7 @@ if (!isset($_SESSION['rol'])) {
         header('location: index.php');
     }
 }
-include_once('includes/usuarios.php');
+include_once('includes/usuarios-totales.php');
 include_once('includes/contrasena.php');
 
 ?>
