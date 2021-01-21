@@ -23,18 +23,20 @@
             </div>
             <div class="article">
                 <p class="article-espacio"></p>
-                
-                    <p class="article-service-center "><strong>Error 404<strong> la página a la que está intentando acceder no existe por favor dirijase al inicio de la aplicaión</p>
-                        
-                    <br>
 
-                        
-               
+                <p class="article-service-center "><strong>Error 404<strong> la página a la que está intentando acceder
+                            no existe por favor dirijase al inicio de la aplicaión</p>
+
+                <br>
+
+
+
                 <a class="article-button" href="index.php" style="text-decoration: none;">Inicio</a>
             </div>
         </div>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
