@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <title>Servicio arrume Carbón</title>
+    <title>Erro 404</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
             <div class="article">
                 <p class="article-espacio"></p>
 
-                <p class="article-service-center "><strong>Error 404<strong> la página a la que está intentando acceder
-                            no existe por favor dirijase al inicio de la aplicaión</p>
+                <p class="article-service-center "><strong>Error 404</strong> la página a la que está intentando acceder
+                    no existe por favor dirijase al inicio de la aplicaión</p>
 
                 <br>
 
