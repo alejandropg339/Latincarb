@@ -26,7 +26,7 @@ if (isset($_POST['inicia'])) {
             $_SESSION['cargadorEstado'] = $cargador;
             //$_SESSION['userService']=$cedulaUsuario;
 
-            $insertServicio = "INSERT INTO `servicio`(`fecha_inicial`, `usuario_cedula`,`operario_cedula`, `tipo_servicio_id`, `cargador_id`) VALUES (NOW(),'$cedulaUsuario','$cedulaG','$servicio','$cargador')";
+            $insertServicio = "INSERT INTO `servicio`(`fecha_inicial`, `usuario_cedula`,`operario_cedula`, `tipo_servicio_id`, `cargador_id`) VALUES ((NOW() - INTERVAL 5 HOUR),'$cedulaUsuario','$cedulaG','$servicio','$cargador')";
             $resultadoInsert = mysqli_query($conexion, $insertServicio);
 
             if ($resultadoInsert) {
