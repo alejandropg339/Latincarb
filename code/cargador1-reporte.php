@@ -17,6 +17,7 @@ include_once('includes/inofrme-cargador.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="images/ensayo.png">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@ include_once('includes/inofrme-cargador.php');
 <body>
     <div class="header">
         <div class="backButton">
-            <a class="img-backButton" href="index-admin.html"><img src="images/back_button.png" alt=""></a>
+            <a class="img-backButton" href="index-admin.php"><img src="images/back_button.png" alt=""></a>
         </div>
         <div class="header-logo">
             <img src="images/LOGO2.jpg" alt="latincarb">
@@ -39,18 +40,16 @@ include_once('includes/inofrme-cargador.php');
     <div class="text">
         <p>Seleccione la fecha inicial desde la cual desea generar el informe </p>
     </div>
+
     <form method="POST">
         <div class="flex-container">
-
-            <input class="fechas" type="date" name="fechaInicial" placeholder="Fecha Final">
-
-
+            <input class="form-control border-success border-3" style="max-width: 75%;" type="date" name="fechaInicial" placeholder="Fecha Final">
         </div>
         <div class="text">
             <p>Seleccione la fecha final desde la cual desea generar el informe </p>
         </div>
         <div class="flex-container">
-            <input class="fechas" type="date" name="fechaFinal" placeholder="Fecha Final">
+            <input class="form-control border-success border-3" style="max-width: 75%;" type="text" name="fechaFinal"  placeholder="Fecha Final">
 
         </div>
         <div class="article">
@@ -58,6 +57,9 @@ include_once('includes/inofrme-cargador.php');
             <input class="article-button" type="submit" name="generarInforme" value="Generar Informe">
         </div>
     </form>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 

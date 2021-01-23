@@ -14,7 +14,7 @@ if (isset($_POST['finServiceDt'])) {
         $resultadoFinalBusqueda = mysqli_fetch_row($resultadoBusqueda);
 
 
-        $updateServicio = "UPDATE `servicio` SET `cantidad_dobletroque` = '$cantidad', `fecha_final` = NOW() WHERE `servicio`.`id` = '$resultadoFinalBusqueda[0]';";
+        $updateServicio = "UPDATE `servicio` SET `cantidad_dobletroque` = '$cantidad', `fecha_final` = (NOW() - INTERVAL 5 HOUR) WHERE `servicio`.`id` = '$resultadoFinalBusqueda[0]';";
         $resultadoUpdate = mysqli_query($conexion, $updateServicio);
 
         echo "".$resultadoUpdate;

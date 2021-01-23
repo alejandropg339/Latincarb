@@ -610,9 +610,20 @@ Flex informes
 /*
 Informe cargador 1
 */
-
-.fechas{
+ .fechas{
   margin-bottom: 25px;
+  width: 75% !important; 
+  border: 5px solid #549154;
+  background:#ecf0f1;
+  padding:5px;
+  min-width: 75%;
+  -webkit-min-logical-width: 75%;
+  /*border-color: #549154;*/
+}
+
+.fichas{
+  background: #d8e4de;
+  /*border-color: #549154;*/
 }
 .text{
   display: flex;
