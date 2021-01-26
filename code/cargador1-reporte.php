@@ -49,7 +49,7 @@ include_once('includes/inofrme-cargador.php');
             <p>Seleccione la fecha final desde la cual desea generar el informe </p>
         </div>
         <div class="flex-container">
-            <input class="form-control border-success border-3" style="max-width: 75%;" type="text" name="fechaFinal"  placeholder="Fecha Final">
+            <input class="form-control border-success border-3" style="max-width: 75%;" type="date" name="fechaFinal"  placeholder="Fecha Final">
 
         </div>
         <div class="article">

@@ -14,6 +14,8 @@
 			<!-- Meta tag Keywords -->
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta charset="UTF-8" />
+			<meta name="descripcion" content="Aplicación lógistica Latinoamericana de carbón ltda">
+			<meta name="keywords" content="latincarb, latincarb.com, latinoamericana de carbon, latinoamericana de carbón, latincarb aplicaion, carbon, carbón">
 			<!-- <meta name="keywords"
 		content="Trendz Login Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" /> -->
 			<script>

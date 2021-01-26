@@ -43,7 +43,7 @@
             
         }else{
             echo '<script language="javascript">';
-            echo 'alert("Por la contraseña debe ser mayor o igual 6 caracteres")';
+            echo 'alert("Por la contraseña debe ser mayor o igual 7 caracteres")';
             echo '</script>';
         }
     }
