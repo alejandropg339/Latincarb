@@ -42,23 +42,48 @@ if (!isset($_SESSION['rol'])) {
     </div>
     <div class="flex-container">
         <div class="flex-item">
-            <a href="cargador1-reporte.php"><img style="border-radius: 5px;" class="img-button1" src="images/camion_verde.jpg"></a>
+            <a href="cargador1-reporte"><img style="border-radius: 5px;" class="img-button1"
+                    src="images/camion_verde.jpg"></a>
         </div>
         <div class="flex-item">
-        <a href="cargador2-reporte.php"><img style="border-radius: 5px;" class="img-button2" src="images/camion_verde.jpg"></a><br>
-        </div>
-        <div class="flex-item">
-        <a href="admin-usuario-reporte.php"><img style="border-radius: 5px;" class="img-button3" src="images/user-green.png"></a>
+            <a href="cargador2-reporte"><img style="border-radius: 5px;" class="img-button2"
+                    src="images/camion_verde.jpg"></a><br>
         </div>
     </div>
     <div class="flex-container">
-        <div class="flex-name"><a href="cargador1-reporte.php" style="text-decoration: underline; color:blue;">Cargador 1</a> 
+
+        <div class="flex-name"><a href="cargador1-reporte" style="text-decoration: underline; color:blue;"> Cargador
+                1</a>
         </div>
-        <div class="flex-name"><a href="cargador2-reporte.php" style="text-decoration: underline; color:blue; padding-right: 10px;">Cargador 2</a> 
+
+        <div class="flex-name"><a href="cargador2-reporte"
+                style="text-decoration: underline; color:blue; padding-right: 10px;"> Cargador 2</a>
         </div>
-        <div class="flex-name"><a href="admin-usuario-reporte.php" style="text-decoration: underline; color:blue; padding-right: 10px;">Usuario</a>  
+
+    </div>
+    <br><br>
+    <div class="flex-container">
+        <div class="flex-item">
+            <a href="admin-usuario-reporte"><img style="border-radius: 5px;" class="img-button3"
+                    src="images/user-green.png"></a>
+        </div>
+        <div class="flex-item">
+            <a href="admin-operario-reporte"><img style="border-radius: 5px;" class="img-button3"
+                    src="images/user-green.png"></a>
         </div>
     </div>
+
+    <div class="flex-container">
+
+        <div class="flex-name"><a href="admin-usuario-reporte"
+                style="text-decoration: underline; color:blue; padding-right: 10px;"> Usuario</a>
+        </div>
+
+        <div class="flex-name"><a href="admin-operario-reporte"
+                style="text-decoration: underline; color:blue; padding-right: 10px;"> Operario</a>
+        </div>
+    </div>
+    
 
 </body>
 
