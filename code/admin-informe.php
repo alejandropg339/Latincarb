@@ -83,7 +83,7 @@ if (!isset($_SESSION['rol'])) {
                 style="text-decoration: underline; color:blue; padding-right: 10px;"> Operario</a>
         </div>
     </div>
-    
+
 
 </body>
 
