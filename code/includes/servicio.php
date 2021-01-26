@@ -17,7 +17,7 @@ if($resultadoFechaInicial==null){
 
 if (isset($_POST['inicia'])) {
     if ($resultadoFechaInicial == null) {
-
+            
         if (strlen($_POST['opUsuario']) >= 1 && strlen($_POST['opServicio']) >= 1 && isset($_POST['cargador']) >= 1) {
             $GLOBALS['cedulaUsuario'] = $_POST['opUsuario'];
             $servicio = $_POST['opServicio'];
@@ -59,6 +59,12 @@ if (isset($_POST['inicia'])) {
             </script>
             ';
             }
+        }else{
+            echo '<script type="text/javascript">
+            alert("Por favor seleccione todas las opciones para empezar.");
+            window.location.href="nuevo-servicio.php";
+            </script>
+            ';
         }
     }else{
         header('location: mas-servicio-validacion.php');

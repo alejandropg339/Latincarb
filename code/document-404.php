@@ -31,7 +31,7 @@
 
 
 
-                <a class="article-button" href="index.php" style="text-decoration: none;">Inicio</a>
+                <a class="article-button" href="index" style="text-decoration: none;">Inicio</a>
             </div>
         </div>
     </div>

@@ -49,7 +49,7 @@ include_once('includes/global.php');
             <p class="article-service ms-md-5">Seleccione el usuario al que se le prestará el servicio</p>
             </div>
             <div class="container-selectors">
-                <select class="selectores" name="opUsuario" required>Seleccionar Usauario
+                <select class="selectores" name="opUsuario">Seleccionar Usauario
                     <option value="" selected disabled hidden>Seleccionar usuario</option>
                     <?php
                     foreach ($resultadoUsuario as $opciones) :
@@ -62,7 +62,7 @@ include_once('includes/global.php');
             <p class="article-service ms-md-5">Seleccione el servicio a prestar</p>
             </div>
             <div class="container-selectors">
-                <select class="selectores" name="opServicio" required>
+                <select class="selectores" name="opServicio">
                     <option value="" selected disabled hidden>Seleccionar Servicio</option>
                     <option value="1">CARGUE DOBLETROQUE</option>
                     <option value="2">CARGUE TRACTOMULA</option>
@@ -126,7 +126,7 @@ include_once('includes/global.php');
 
             </div>
             <br>
-            <input class="article-button mb-3" name="inicia" type="submit" value="Iniciar Servicio">
+            <input class="article-button mb-3" name="inicia" type="submit" value="Iniciar/finalizar Servicio">
         </form>
     </div>
     </div>
