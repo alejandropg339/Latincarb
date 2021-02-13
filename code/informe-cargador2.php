@@ -68,6 +68,13 @@ include_once('includes/global4.php');
 
                 <tr>
 
+                    <td>Total Cuatro Manos</td>
+                    <td><?php echo $cantCM?></td>
+
+                </tr>
+
+                <tr>
+
                     <td>Tiempo arrume de carbón</td>
                     <td><?php echo $tArrumeF." Horas"?></td>
 

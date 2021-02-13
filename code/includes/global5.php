@@ -2,8 +2,10 @@
 
 $GLOBALS['cantDTF']="";
 $GLOBALS['cantTRF']="";
+$GLOBALS['cantCM']="";
 $GLOBALS['cantDTF2']="";
 $GLOBALS['cantTRF2']="";
+$GLOBALS['cantCM2']="";
 /*$GLOBALS['tCombustibleF']="";
 $GLOBALS['tAceiteF']="";
 $GLOBALS['tEngraseF']="";
@@ -27,8 +29,10 @@ $GLOBALS['tUsoF']="";
 if(isset($_POST['generarInforme'])){
     $cantDTF = $_SESSION['cantidadDT'];
     $cantTRF = $_SESSION['cantidadTR'];
+    $cantCM = $_SESSION['cantidadCM'];
     $cantDTF2 = $_SESSION['cantidadDT2'];
     $cantTRF2 = $_SESSION['cantidadTR2'];
+    $cantCM2 = $_SESSION['cantidadCM2'];
     /*$tCombustibleF = $_SESSION['tCombustible'];
     $tAceiteF = $_SESSION['tAceite'];
     $tEngraseF = $_SESSION['tEngrase'];
@@ -51,8 +55,10 @@ if(isset($_POST['generarInforme'])){
 }else{
     $cantDTF = $_SESSION['cantidadDT'];
     $cantTRF = $_SESSION['cantidadTR'];
+    $cantCM = $_SESSION['cantidadCM'];
     $cantDTF2 = $_SESSION['cantidadDT2'];
     $cantTRF2 = $_SESSION['cantidadTR2'];
+    $cantCM2 = $_SESSION['cantidadCM2'];
    /* $tCombustibleF = $_SESSION['tCombustible'];
     $tAceiteF = $_SESSION['tAceite'];
     $tEngraseF = $_SESSION['tEngrase'];

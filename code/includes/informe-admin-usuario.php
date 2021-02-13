@@ -31,7 +31,7 @@ if (isset($_POST['generarInforme'])) {
         $resultadoFinalPro = $resultadoFinalPro / 3600;
         $resultadoFinalPro = bcdiv($resultadoFinalPro, '1', 3);
 
-        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE usuario_cedula='$usuario' AND cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas), SUM(cuatro_manos) FROM servicio WHERE usuario_cedula='$usuario' AND cargador_id=1 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
 
         $resultadoC1 = mysqli_query($conexion, $consultaC1);
 
@@ -39,13 +39,15 @@ if (isset($_POST['generarInforme'])) {
 
         $GLOBALS['cantDobletroque'] = $finalC1[0];
         $GLOBALS['cantTractomula'] = $finalC1[1];
+        $GLOBALS['cantCuatroManos'] = $finalC1[2];
         $GLOBALS['tiempoUsoFinal'] = $resultadoFinalPro;
 
         $_SESSION['cantidadDT'] = $cantDobletroque;
         $_SESSION['cantidadTR'] = $cantTractomula;
+        $_SESSION['cantidadCM'] = $cantCuatroManos;
         $_SESSION['tUso'] = $tiempoUsoFinal;
 
-        $consultaC2 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE usuario_cedula='$usuario' AND cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaC2 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas), SUM(cuatro_manos) FROM servicio WHERE usuario_cedula='$usuario' AND cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
 
         $resultadoC2 = mysqli_query($conexion, $consultaC2);
 
@@ -53,9 +55,11 @@ if (isset($_POST['generarInforme'])) {
 
         $GLOBALS['cantDobletroque2'] = $finalC2[0];
         $GLOBALS['cantTractomula2'] = $finalC2[1];
+        $GLOBALS['cantCuatroManos2'] = $finalC2[2];
 
         $_SESSION['cantidadDT2'] = $cantDobletroque2;
         $_SESSION['cantidadTR2'] = $cantTractomula2;
+        $_SESSION['cantidadCM2'] = $cantCuatroManos2;
 
         //Tiempo Mezcla de carbón C1
 

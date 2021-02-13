@@ -82,6 +82,14 @@ include_once('includes/usuarios.php');
             <tr>
 
                 <td>Cargador 1</td>
+                <td>Total cuatro manos</td>
+                <td><?php echo" ".$cantCM; ?></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cargador 1</td>
                 <td>Tiempo arrume de carbón</td>
                 <td><?php echo" ".$tArrumeF; ?></td>
             </tr>
@@ -107,6 +115,14 @@ include_once('includes/usuarios.php');
                 <td>Cargador 2</td>
                 <td>Total tractomulas</td>
                 <td><?php echo" ".$cantTRF2; ?></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Cargador 2</td>
+                <td>Total cuatro manos</td>
+                <td><?php echo" ".$cantCM2; ?></td>
 
             </tr>
 

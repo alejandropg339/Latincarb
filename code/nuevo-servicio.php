@@ -69,6 +69,7 @@ include_once('includes/global.php');
                     <option value="3">ARRUME CARBÓN</option>
                     <option value="4">MEZLA DE CARBÓN</option>
                     <option value="5">MÁS DE UN SERVICIO</option>
+                    <option value="6">CARGUE A CUATRO MANOS</option>
                 </select>
             </div>
             <div class="text-container ms-md-5">

@@ -48,6 +48,9 @@ if (isset($_POST['inicia'])) {
                     case 5:
                         header('location: mas-servicio.php');
                         break;
+                    case 6:
+                        header('location: servicio-cm.php');
+                         break;
 
                     default:
                         header('location:index.php');

@@ -35,7 +35,7 @@ if (isset($_POST['generarInforme'])) {
         $resultadoFinalPro=$resultadoFinalPro/3600;
         $resultadoFinalPro= bcdiv($resultadoFinalPro, '1', 3);
 
-        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas) FROM servicio WHERE cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
+        $consultaC1 = "SELECT SUM(cantidad_dobletroque), SUM(cantidad_tractomulas), SUM(cuatro_manos) FROM servicio WHERE cargador_id=2 AND fecha_inicial >= '$f1' AND fecha_final < DATE_ADD('$f2', INTERVAL 1 DAY)";
 
         $resultadoC1 = mysqli_query($conexion,$consultaC1);
 
@@ -43,10 +43,12 @@ if (isset($_POST['generarInforme'])) {
 
         $GLOBALS['cantDobletroque'] = $finalC1[0];
         $GLOBALS['cantTractomula'] = $finalC1[1];
+        $GLOBALS['cantCuatroManos'] = $finalC1[2];
         $GLOBALS['tiempoUsoFinal'] = $resultadoFinalPro;
 
         $_SESSION['cantidaDT'] = $cantDobletroque;
         $_SESSION['cantidadTR'] = $cantTractomula;
+        $_SESSION['cantidadCM'] = $cantCuatroManos;
         $_SESSION['tUso'] = $tiempoUsoFinal;
      
 
