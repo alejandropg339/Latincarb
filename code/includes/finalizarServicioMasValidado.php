@@ -29,9 +29,9 @@ if (isset($_POST['finServiceMas'])) {
             $resultadoUpdate = mysqli_query($conexion, $updateServicio);
 
             if ($resultadoUpdate) {
-                header('location: index-operario.php');
                 $updateEstado2 = "UPDATE `cargador` SET `estado` = '1' WHERE `cargador`.`id` = '$resultadoFinalBusqueda3'";
                 $updateResultado2 = mysqli_query($conexion, $updateEstado2);
+                header('location: index-operario.php');
             } else {
                 echo '<script type="text/javascript">
             alert("Algo Salio mal por favor intentelo de nuevo");

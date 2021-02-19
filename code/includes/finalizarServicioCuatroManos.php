@@ -6,7 +6,7 @@ include_once('servicio.php');
 
 if (isset($_POST['finServiceCM'])) {
 
-    if (strlen($_POST['cantTractomula'])>=1) {
+    if (strlen($_POST['cantTractomula']) >= 1) {
         $cantidad = $_POST['cantTractomula'];
 
         $busqueda = "SELECT id FROM servicio WHERE fecha_final IS NULL AND usuario_cedula= '$cedulaService'";
@@ -17,12 +17,12 @@ if (isset($_POST['finServiceCM'])) {
         $updateServicio = "UPDATE `servicio` SET `cuatro_manos` = '$cantidad', `fecha_final` = NOW() WHERE `servicio`.`id` = '$resultadoFinalBusqueda[0]';";
         $resultadoUpdate = mysqli_query($conexion, $updateServicio);
 
-        if($resultadoUpdate){
-            header('location: index-operario.php');
+        if ($resultadoUpdate) {
             $updateEstado2 = "UPDATE `cargador` SET `estado` = '1' WHERE `cargador`.`id` = '$estadoCargador'";
-                    $updateResultado2 = mysqli_query($conexion, $updateEstado2);
-        }else{
-            echo'<script type="text/javascript">
+            $updateResultado2 = mysqli_query($conexion, $updateEstado2);
+            header('location: index-operario.php');
+        } else {
+            echo '<script type="text/javascript">
             alert("Algo Salio mal por favor intentelo de nuevo");
             window.location.href="#";
             </script>

@@ -7,7 +7,7 @@ include_once('global3.php');
 if (isset($_POST['finMantenimiento'])) {
 
 
-    if (strlen($_POST['costMantenimiento'])>=3) {
+    if (strlen($_POST['costMantenimiento']) >= 3) {
 
         $costo = $_POST['costMantenimiento'];
 
@@ -19,19 +19,19 @@ if (isset($_POST['finMantenimiento'])) {
         $updateMantenimiento = "UPDATE `mantenimiento` SET `costo` = '$costo', `fecha_final` = NOW() WHERE `mantenimiento`.`id` = '$resultadoFinalBusqueda[0]';";
         $resultadoUpdate = mysqli_query($conexion, $updateMantenimiento);
 
-        if($resultadoUpdate){
-            header('location: index.php');
+        if ($resultadoUpdate) {
             $updateEstado2 = "UPDATE `cargador` SET `estado` = '1' WHERE `cargador`.`id` = '$estadoCargador'";
-                    $updateResultado2 = mysqli_query($conexion, $updateEstado2);
-        }else{
-            echo'<script type="text/javascript">
+            $updateResultado2 = mysqli_query($conexion, $updateEstado2);
+            header('location: index.php');
+        } else {
+            echo '<script type="text/javascript">
             alert("Algo Salio mal por favor intentelo de nuevo");
             window.location.href="#";
             </script>
             ';
         }
-    }else{
-        echo'<script type="text/javascript">
+    } else {
+        echo '<script type="text/javascript">
             alert("El mantenimiento debe tener un valor igual o mayor a 3 cifras");
             window.location.href="#";
             </script>
